@@ -1,0 +1,38 @@
+body {
+  background-color: #00bfe7;
+  color: #fff;
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9999;
+
+}
+input[type="text"], input[type="text"]:focus {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  border-radius: 0px;
+  box-shadow: none;
+  border: #FFF solid 1px;
+  caret-color: #FFF;
+
+  color: #FFF;
+}
+
+input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #00E1FF;
+}
+input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: #00E1FF;
+}
+input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  color: #00E1FF;
+}
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: #00E1FF;
+}

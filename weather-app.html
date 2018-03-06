@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Weather App</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/weather-style.css">
+</head>
+
+<body>
+  <div id="loading">
+    <div class="row text-center">
+      <div class="col self-center">
+        <p style="font-size: 6em;"><i class="fas fa-spinner fa-spin"></i></p>
+        <h1>Retrieving Data...</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="text-center">Weather Application Demo</h2>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 col text-center">
+        <form>
+          <div class=" center-block">
+            <input id="cityName" type="text" class="form-control input-lg text-center" placeholder="Ex: Portland" autofocus>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center" style="margin-top: 10px;">
+      <div class="text-center" style="width:100%">
+        <h6 class="text-center" id="wa-error" style="display: none">There was an error. Please try another city or check spelling.</h6>
+      </div>
+      <div class="col-sm-6" class="">
+        <div id="weather-img" class="text-right"></div>
+      </div>
+      <div class="col-sm-6">
+        <h1 id="wa-temperature"></h1>
+        <h3 id="wa-conditions"></h3>
+        <h6 id="wa-wind-speed"></h6>
+        <h6 id="wa-humidity"></h6>
+        <h6 id="wa-temp-range"></h6>
+
+        <div class="row">
+          <div class="col-sm-4">
+
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/weather-app.js" ></script>
+  </body>
+  </html>
